@@ -7,5 +7,7 @@ $1 is scaling factor. Higher than 2 is probably a bad idea.
 
 Todo: 
 -Change to grab current values vs hardcoded
+
 -Sanity check
+
 -GUI?
