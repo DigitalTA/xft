@@ -1,0 +1,11 @@
+#!/bin/bash
+# XrandrForThinkpad
+# Simple script to artificially increase amount of things that fit on my laptop screen.
+# Tested on a x230, probably works elsewhere.
+s="$1"
+#echo $s
+x=`echo "$1"*1366/1 | bc`
+#echo $x
+y=`echo "$1"*768/1| bc` #/1 because xrandr --panning doesn't like decimals
+#echo $y
+xrandr --output LVDS-1 --scale "$s"x"$s" --panning "$x"x"$y"
