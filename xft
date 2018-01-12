@@ -4,8 +4,8 @@
 # Tested on a x230, probably works elsewhere.
 s="$1"
 #echo $s
-x=`echo "$1"*1366/1 | bc`
+x=`echo "$1"*1366/1 | bc` #/1 because xrandr --panning doesn't like decimals
 #echo $x
-y=`echo "$1"*768/1| bc` #/1 because xrandr --panning doesn't like decimals
+y=`echo "$1"*768/1| bc` #ditto
 #echo $y
 xrandr --output LVDS-1 --scale "$s"x"$s" --panning "$x"x"$y"
