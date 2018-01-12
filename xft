@@ -1,5 +1,5 @@
 #!/bin/bash
-# XrandrForThinkpad
+# XrandrForThinkpad by dTA
 # Simple script to artificially increase amount of things that fit on my laptop screen.
 # Tested on a x230, probably works elsewhere.
 s="$1"
