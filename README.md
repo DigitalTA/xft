@@ -2,7 +2,7 @@ XrandrForThinkpad
 
 Wanted to scale my laptop screen quickly to fit more stuff. Using xrandr without --panning limits cursor movement to original resolution.
 This script automates calculating the values for --panning.
-Usage: ./xft $1
+Usage: ./xft $1 where
 $1 is scaling factor. Higher than 2 is probably a bad idea.
 
 Todo: 
